@@ -189,7 +189,7 @@ tính toán đều chỉ đổi được khoảng 1.1x, còn knob duy nhất b�
 | Static batch cho embedding (B5/C9) | gom nhiều việc vào một lần | 1.11x |
 | Continuous batching 4 slot (base) | chia sẻ một lần đọc weight | 1.15x |
 | Thread 1 -> 4 (base) | thêm 4x năng lực tính | 2.17x |
-| KV cache q8_0 (B4/C2) | giảm 1.1% RAM | 0.95x, tức lỗ |
+| KV cache q8_0 (B4/C2) | giảm 1.1% RAM | 0.95x |
 | Prompt caching (base, integrate) | không tính lại phần đã tính | 3.3x |
 
 Deck trình bày các knob này như những cải tiến chung, và trên GPU thì đúng: batching gần
